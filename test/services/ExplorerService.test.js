@@ -14,7 +14,7 @@ describe("Unit test for ExplorerService class", () => {
         const path = './test/data/explorersDummy.json'
         const explorer = Explorers.readJsonFile(path)
         const cantidadExplorers = ExplorerService.getAmountOfExplorersByMission(explorer, "node");
-        expect(cantidadExplorers).toBe(100)
+        expect(cantidadExplorers).toBe(10)
     })
     test("3. ExplorerService: filtra los nombres de usuario por mission node", () => {
         const path = './test/data/explorersDummy.json'

@@ -19,5 +19,9 @@ describe("Unit test for ExplorerController class", () => {
         const listaExplorers = ExplorerController.getExplorersAmountByMission("node");
         expect(listaExplorers).toBe(10);
     })
-        
+    test("4. ExplorerController: Comprobando método getValidationInNumber", () => {
+
+        const numberFizzbuzz = ExplorerController.getValidationInNumber(15);
+        expect(numberFizzbuzz).toBe("FIZZBUZZ");
+    })    
 })
